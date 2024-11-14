@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.browser-container {
+  flex-grow: 1;
+}
+
+.embedded-iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
