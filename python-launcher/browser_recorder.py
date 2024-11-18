@@ -66,13 +66,10 @@ def monitor_user_behavior(url, log_dir):
             print(f"Monitor setup verified: {monitor_check}")
             
             # Try to inject the intention interface
-            try:
-                with open('intention-buttons.js', 'r') as f:
-                    intention_interface_js = f.read()
-                safe_evaluate(page, intention_interface_js)
-            except FileNotFoundError:
-                print("Warning: intention-buttons.js not found, skipping interface injection")
-            
+            with open('user-intention.js', 'r') as f:
+                intention_interface_js = f.read()
+            safe_evaluate(page, intention_interface_js)
+
             print("Monitoring started. Close the browser window to stop monitoring.")
             log_event(event_log_path, "Monitoring initialized")
             
@@ -83,6 +80,7 @@ def monitor_user_behavior(url, log_dir):
                     log_event(event_log_path, f"Navigation - New URL: {frame.url}")
                     # Reinitialize monitors after navigation
                     setup_page_monitors(page)
+                    safe_evaluate(page, intention_interface_js)
             
             page.on("framenavigated", handle_navigation)
             
@@ -114,9 +112,16 @@ def monitor_user_behavior(url, log_dir):
 
 def setup_page_monitors(page):
     script = """
-        // Remove existing event listeners if any
-        if (window.monitorData) {
-            window.monitorData = null;
+        // Store event handler references for removal
+        if (!window.monitorHandlers) {
+            window.monitorHandlers = {};
+        } else {
+            // Remove existing event listeners
+            document.removeEventListener('click', window.monitorHandlers.click, true);
+            document.removeEventListener('keypress', window.monitorHandlers.keypress, true);
+            document.removeEventListener('scroll', window.monitorHandlers.scroll, true);
+            document.removeEventListener('input', window.monitorHandlers.input, true);
+            document.removeEventListener('mousemove', window.monitorHandlers.mousemove, true);
         }
         
         // Initialize fresh monitor data
@@ -137,7 +142,7 @@ def setup_page_monitors(page):
         }
         
         // Click handler
-        document.addEventListener('click', function(event) {
+        window.monitorHandlers.click = function(event) {
             if (!window.monitorData) return;
             window.monitorData.clickCount++;
             const target = event.target.closest('a');
@@ -146,38 +151,38 @@ def setup_page_monitors(page):
             } else {
                 logEvent(`Click detected at: ${event.clientX}, ${event.clientY}`);
             }
-        }, true);
+        };
 
         // Keypress handler
-        document.addEventListener('keypress', function(event) {
+        window.monitorHandlers.keypress = function(event) {
             if (!window.monitorData) return;
             window.monitorData.keypressCount++;
             logEvent(`Key pressed: ${event.key}`);
-        }, true);
+        };
 
-        // Scroll handler
+        // Scroll handler with debounce
         let scrollTimeout;
-        document.addEventListener('scroll', function() {
+        window.monitorHandlers.scroll = function() {
             if (!window.monitorData) return;
             clearTimeout(scrollTimeout);
             scrollTimeout = setTimeout(() => {
                 window.monitorData.scrollCount++;
                 logEvent(`Page scrolled to: ${window.scrollX}, ${window.scrollY}`);
             }, 100);
-        }, true);
+        };
 
         // Input handler
-        document.addEventListener('input', function(event) {
+        window.monitorHandlers.input = function(event) {
             if (!window.monitorData) return;
             if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') {
                 window.monitorData.lastInputValue = event.target.value;
                 logEvent(`Input detected on ${event.target.tagName} element`);
             }
-        }, true);
+        };
 
-        // Hover handler
+        // Hover handler with debounce
         let hoverTimeout;
-        document.addEventListener('mousemove', function(event) {
+        window.monitorHandlers.mousemove = function(event) {
             if (!window.monitorData) return;
             clearTimeout(hoverTimeout);
             hoverTimeout = setTimeout(() => {
@@ -189,7 +194,14 @@ def setup_page_monitors(page):
                     logEvent(`Hover detected at: ${event.clientX}, ${event.clientY}`);
                 }
             }, 500);
-        }, true);
+        };
+
+        // Add event listeners with stored handlers
+        document.addEventListener('click', window.monitorHandlers.click, true);
+        document.addEventListener('keypress', window.monitorHandlers.keypress, true);
+        document.addEventListener('scroll', window.monitorHandlers.scroll, true);
+        document.addEventListener('input', window.monitorHandlers.input, true);
+        document.addEventListener('mousemove', window.monitorHandlers.mousemove, true);
 
         console.log('Page monitors initialized');
     """
