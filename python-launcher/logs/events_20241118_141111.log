@@ -1,0 +1,63 @@
+[2024-11-18 14:11:13] Session started - Navigated to: https://www.amazon.com
+[2024-11-18 14:11:13] Monitoring initialized
+[2024-11-18 14:11:14] Detected 1 click(s)
+[2024-11-18 14:11:14] Click detected at: 1169, 665
+[2024-11-18 14:11:14] Detected 3 keypress(es)
+[2024-11-18 14:11:14] Last input value: wqd
+[2024-11-18 14:11:14] Key pressed: w
+[2024-11-18 14:11:14] Input detected on INPUT element
+[2024-11-18 14:11:14] Key pressed: q
+[2024-11-18 14:11:14] Input detected on INPUT element
+[2024-11-18 14:11:14] Key pressed: d
+[2024-11-18 14:11:14] Input detected on INPUT element
+[2024-11-18 14:11:15] Detected 3 keypress(es)
+[2024-11-18 14:11:15] Last input value: wqdwd
+[2024-11-18 14:11:15] Key pressed: w
+[2024-11-18 14:11:15] Input detected on INPUT element
+[2024-11-18 14:11:15] Key pressed: d
+[2024-11-18 14:11:15] Input detected on INPUT element
+[2024-11-18 14:11:15] Key pressed: Enter
+[2024-11-18 14:11:15] Detected 1 hover(s)
+[2024-11-18 14:11:15] Hover detected on link: "" (https://www.amazon.com/gp/browse.html?aref=HKQO8ibl7G&aaxitk=3d8de31dfbe6e24b1533f54912539273&node=73846268011)
+[2024-11-18 14:11:17] Detected 1 click(s)
+[2024-11-18 14:11:17] Detected 3 keypress(es)
+[2024-11-18 14:11:17] Last input value: wqd
+[2024-11-18 14:11:17] Click detected at: 1173, 668
+[2024-11-18 14:11:17] Key pressed: w
+[2024-11-18 14:11:17] Input detected on INPUT element
+[2024-11-18 14:11:17] Key pressed: q
+[2024-11-18 14:11:17] Input detected on INPUT element
+[2024-11-18 14:11:17] Key pressed: d
+[2024-11-18 14:11:17] Input detected on INPUT element
+[2024-11-18 14:11:17] Detected 6 keypress(es)
+[2024-11-18 14:11:17] Detected 1 hover(s)
+[2024-11-18 14:11:17] Last input value: wqdwqdqwd
+[2024-11-18 14:11:17] Key pressed: q
+[2024-11-18 14:11:17] Input detected on INPUT element
+[2024-11-18 14:11:17] Hover detected at: 1173, 668
+[2024-11-18 14:11:17] Key pressed: d
+[2024-11-18 14:11:17] Input detected on INPUT element
+[2024-11-18 14:11:17] Key pressed: q
+[2024-11-18 14:11:17] Input detected on INPUT element
+[2024-11-18 14:11:17] Key pressed: w
+[2024-11-18 14:11:17] Input detected on INPUT element
+[2024-11-18 14:11:17] Key pressed: d
+[2024-11-18 14:11:17] Input detected on INPUT element
+[2024-11-18 14:11:18] Detected 1 keypress(es)
+[2024-11-18 14:11:18] Key pressed: Enter
+[2024-11-18 14:11:21] Detected 1 hover(s)
+[2024-11-18 14:11:21] Hover detected at: 1264, 661
+[2024-11-18 14:12:09] Detected 1 hover(s)
+[2024-11-18 14:12:09] Hover detected on link: "Under $10" (https://www.amazon.com/b/?_encoding=UTF8&ie=UTF8&node=122248911011&enabledRefinements=%5B%7B%22rid%22%3A%22p_36%22%2C%22value%22%3A%220-1000%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22SEARCH_CONSTRAINT%22%7D%5D&pd_rd_w=Qk38K&content-id=amzn1.sym.4b6234c7-6879-4dbe-86bd-3a89a7093236&pf_rd_p=4b6234c7-6879-4dbe-86bd-3a89a7093236&pf_rd_r=Z6GREWPHRRZZ4QQK9G5R&pd_rd_wg=QyHRp&pd_rd_r=ebae3302-1420-4e7d-baa5-085d61b0ae5b&ref_=pd_hp_d_atf_unk)
+[2024-11-18 14:14:41] Detected 1 hover(s)
+[2024-11-18 14:14:41] Hover detected on link: "._cropped-image-link_style_dt-TextContainer__3nbU9 {--text-pos-y: 30px; --text-pos-x: 320px; --text-width: 50%; --title-text-width: 50%; --subtitle-text-width: 50%; --title-font-color: #FFFFFF; --title-font-size: 44px; --title-font-weight: 700; --subtitle-font-color: #FFFFFF; --subtitle-font-size: 36px; --subtitle-font-weight: 700; --subtitle-margin-top: 4px; --cta-font-size: 14px; --cta-margin-top: 20px; --legal-line-font-color: #FFFFFF; --legal-line-font-size: 14px; --legal-line-margin-top: 14px; }" (https://www.amazon.com/prime/?_encoding=UTF8&pd_rd_w=YeX1p&content-id=amzn1.sym.383d31d5-0af0-4826-a949-c4af25f06edf&pf_rd_p=383d31d5-0af0-4826-a949-c4af25f06edf&pf_rd_r=Z6GREWPHRRZZ4QQK9G5R&pd_rd_wg=O8Yvw&pd_rd_r=e833a2cd-6ee7-42ea-acdf-2f55f3de41b8&ref_=pd_hp_d_hero_unk)
+[2024-11-18 14:14:44] Detected 1 hover(s)
+[2024-11-18 14:14:44] Hover detected on link: "Under $75" (https://www.amazon.com/b/ref=s9_bw_cg_HOL24_2c1_w/?_encoding=UTF8&node=122248897011&enabledRefinements=%5B%7B%22rid%22%3A%22p_36%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%220-7500%22%2C%22type%22%3A%22SEARCH_CONSTRAINT%22%7D%5D&ref_=75&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_t=101&pf_rd_i=122248911011&pd_rd_w=Qk38K&content-id=amzn1.sym.4b6234c7-6879-4dbe-86bd-3a89a7093236&pf_rd_p=4b6234c7-6879-4dbe-86bd-3a89a7093236&pf_rd_r=Z6GREWPHRRZZ4QQK9G5R&pd_rd_wg=QyHRp&pd_rd_r=ebae3302-1420-4e7d-baa5-085d61b0ae5b)
+[2024-11-18 14:14:45] Detected 1 hover(s)
+[2024-11-18 14:14:45] Hover detected at: 326, 707
+[2024-11-18 14:14:45] Detected 1 hover(s)
+[2024-11-18 14:14:45] Hover detected at: 906, 386
+[2024-11-18 14:14:46] Detected 1 hover(s)
+[2024-11-18 14:14:46] Hover detected at: 900, 405
+[2024-11-18 14:15:18] Detected 1 hover(s)
+[2024-11-18 14:15:18] Hover detected at: 778, 414

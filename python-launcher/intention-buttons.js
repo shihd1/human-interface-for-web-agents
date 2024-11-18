@@ -1,6 +1,7 @@
-// Create and inject the floating interface
+
 (function createIntentionInterface() {
-  // Create the main container
+  let isMinimized = false;
+  const messages = [];
   const container = document.createElement("div");
   container.id = "intention-interface";
   Object.assign(container.style, {
@@ -15,80 +16,110 @@
     display: "flex",
     flexDirection: "column",
     gap: "10px",
+    transition: "all 0.3s ease",
   });
 
-  // Create the header
   const header = document.createElement("div");
-  header.textContent = "Having trouble?";
   Object.assign(header.style, {
-    fontWeight: "bold",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
     marginBottom: "5px",
+  });
+
+  const headerText = document.createElement("span");
+  headerText.textContent = "Having trouble?";
+  Object.assign(headerText.style, {
+    fontWeight: "bold",
     textAlign: "center",
   });
 
-  // Create "I can't do that" button
-  const cantDoButton = document.createElement("button");
-  cantDoButton.textContent = "I can't do that";
-  styleButton(cantDoButton);
-  cantDoButton.addEventListener("click", () => {
-    dispatchIntentionEvent("cant_do");
-    highlightButton(cantDoButton);
+  const minimizeButton = document.createElement("button");
+  minimizeButton.textContent = "−";
+  Object.assign(minimizeButton.style, {
+    border: "none",
+    backgroundColor: "transparent",
+    fontWeight: "bold",
+    fontSize: "16px",
+    cursor: "pointer",
+  });
+  minimizeButton.addEventListener("click", toggleMinimize);
+
+  header.appendChild(headerText);
+  header.appendChild(minimizeButton);
+  const inputBox = document.createElement("input");
+  inputBox.type = "text";
+  inputBox.placeholder = "Type your message here...";
+  Object.assign(inputBox.style, {
+    padding: "8px",
+    border: "1px solid #ccc",
+    borderRadius: "4px",
+    width: "calc(100% - 16px)",
+    fontSize: "14px",
   });
 
-  // Create "I don't understand" button
-  const dontUnderstandButton = document.createElement("button");
-  dontUnderstandButton.textContent = "I don't understand";
-  styleButton(dontUnderstandButton);
-  dontUnderstandButton.addEventListener("click", () => {
-    dispatchIntentionEvent("dont_understand");
-    highlightButton(dontUnderstandButton);
+  const enterButton = document.createElement("button");
+  enterButton.textContent = "Enter";
+  Object.assign(enterButton.style, {
+    padding: "8px 15px",
+    border: "1px solid #ccc",
+    borderRadius: "4px",
+    backgroundColor: "#f0f0f0",
+    cursor: "pointer",
+    fontSize: "14px",
+    alignSelf: "flex-end",
+    marginTop: "5px",
+    transition: "all 0.2s ease",
   });
 
-  // Append elements to container
+  enterButton.addEventListener("click", () => {
+    const message = inputBox.value.trim();
+    if (message) {
+      storeMessage(message);
+      dispatchIntentionEvent(message);
+      inputBox.value = "";
+    }
+  });
+
+  enterButton.addEventListener("mouseover", () => {
+    enterButton.style.backgroundColor = "#e0e0e0";
+  });
+  enterButton.addEventListener("mouseout", () => {
+    enterButton.style.backgroundColor = "#f0f0f0";
+  });
+
   container.appendChild(header);
-  container.appendChild(cantDoButton);
-  container.appendChild(dontUnderstandButton);
-
-  // Only inject if not already present
+  container.appendChild(inputBox);
+  container.appendChild(enterButton);
   if (!document.getElementById("intention-interface")) {
     document.body.appendChild(container);
   }
 
-  // Helper function to style buttons
-  function styleButton(button) {
-    Object.assign(button.style, {
-      padding: "8px 15px",
-      border: "1px solid #ccc",
-      borderRadius: "4px",
-      backgroundColor: "#f0f0f0",
-      cursor: "pointer",
-      transition: "all 0.2s ease",
-      width: "150px",
-    });
-
-    // Hover effect
-    button.addEventListener("mouseover", () => {
-      button.style.backgroundColor = "#e0e0e0";
-    });
-    button.addEventListener("mouseout", () => {
-      button.style.backgroundColor = "#f0f0f0";
-    });
+  function toggleMinimize() {
+    isMinimized = !isMinimized;
+    if (isMinimized) {
+      inputBox.style.display = "none";
+      enterButton.style.display = "none";
+      minimizeButton.textContent = "+";
+    } else {
+      inputBox.style.display = "block";
+      enterButton.style.display = "block";
+      minimizeButton.textContent = "−";
+    }
   }
 
-  // Helper function to highlight button when clicked
-  function highlightButton(button) {
-    const originalColor = button.style.backgroundColor;
-    button.style.backgroundColor = "#90EE90"; // Light green
-    setTimeout(() => {
-      button.style.backgroundColor = originalColor;
-    }, 5000);
+  function storeMessage(message) {
+    const timestamp = new Date().toISOString();
+    messages.push({ message, timestamp });
+    console.log("Stored Message:", { message, timestamp });
   }
 
-  // Helper function to dispatch custom event
-  function dispatchIntentionEvent(type) {
+  //unsure hown to use
+  function dispatchIntentionEvent(message) {
     const event = new CustomEvent("userIntention", {
       detail: {
-        type: type,
+        type: "message",
+        content: message,
         timestamp: new Date().toISOString(),
         url: window.location.href,
       },

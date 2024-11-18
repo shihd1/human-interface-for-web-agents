@@ -1,0 +1,73 @@
+[2024-11-18 14:10:01] Session started - Navigated to: https://www.amazon.com
+[2024-11-18 14:10:01] Monitoring initialized
+[2024-11-18 14:10:03] Detected 1 click(s)
+[2024-11-18 14:10:03] Click detected at: 1172, 670
+[2024-11-18 14:10:03] Detected 1 keypress(es)
+[2024-11-18 14:10:03] Last input value: d
+[2024-11-18 14:10:03] Key pressed: d
+[2024-11-18 14:10:03] Input detected on INPUT element
+[2024-11-18 14:10:04] Detected 6 keypress(es)
+[2024-11-18 14:10:04] Detected 1 hover(s)
+[2024-11-18 14:10:04] Last input value: dwqdwqd
+[2024-11-18 14:10:04] Key pressed: w
+[2024-11-18 14:10:04] Input detected on INPUT element
+[2024-11-18 14:10:04] Key pressed: q
+[2024-11-18 14:10:04] Input detected on INPUT element
+[2024-11-18 14:10:04] Key pressed: d
+[2024-11-18 14:10:04] Input detected on INPUT element
+[2024-11-18 14:10:04] Hover detected at: 1239, 668
+[2024-11-18 14:10:04] Key pressed: w
+[2024-11-18 14:10:04] Input detected on INPUT element
+[2024-11-18 14:10:04] Key pressed: q
+[2024-11-18 14:10:04] Input detected on INPUT element
+[2024-11-18 14:10:04] Key pressed: d
+[2024-11-18 14:10:04] Input detected on INPUT element
+[2024-11-18 14:10:04] Detected 1 keypress(es)
+[2024-11-18 14:10:04] Key pressed: Enter
+[2024-11-18 14:10:06] Detected 1 hover(s)
+[2024-11-18 14:10:06] Hover detected at: 1276, 613
+[2024-11-18 14:10:09] Detected 1 hover(s)
+[2024-11-18 14:10:09] Hover detected on link: "Previous slide" (https://www.amazon.com/#)
+[2024-11-18 14:10:11] Detected 1 click(s)
+[2024-11-18 14:10:11] Click detected at: 1207, 425
+[2024-11-18 14:10:12] Detected 1 hover(s)
+[2024-11-18 14:10:12] Hover detected at: 1272, 425
+[2024-11-18 14:10:16] Detected 1 hover(s)
+[2024-11-18 14:10:16] Hover detected on link: "" (https://www.amazon.com/events/devicedeals/?_encoding=UTF8&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&bubble-id=deals-collection-smart-home&ref_=ods_gw_GW_US_EN_XPL_SA-CO-CH_BFDLU24_H1_Y_XPL_C-5342&pd_rd_w=fMZED&content-id=amzn1.sym.834a6219-dcb0-4f2d-a027-c188a0583153&pf_rd_p=834a6219-dcb0-4f2d-a027-c188a0583153&pf_rd_r=GC3SBX1SDVA1C0464HN7&pd_rd_wg=QQlQ1&pd_rd_r=9f7122d5-ab59-44e4-b086-dbd187870891)
+[2024-11-18 14:10:18] Detected 1 hover(s)
+[2024-11-18 14:10:18] Hover detected at: 1254, 422
+[2024-11-18 14:10:23] Detected 1 hover(s)
+[2024-11-18 14:10:23] Hover detected at: 118, 350
+[2024-11-18 14:10:25] Navigation - New URL: https://www.amazon.com/b/ref=s9_bw_cg_HOL24_2a1_w/?_encoding=UTF8&node=122248688011&ref_=her&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_t=101&pf_rd_i=122324603011&pd_rd_w=EPysm&content-id=amzn1.sym.b3b68379-b01d-40de-83d5-6b106523f4e1&pf_rd_p=b3b68379-b01d-40de-83d5-6b106523f4e1&pf_rd_r=GC3SBX1SDVA1C0464HN7&pd_rd_wg=ff9z1&pd_rd_r=e93a007a-aa00-4050-a1de-fc7852c12a2d
+[2024-11-18 14:10:27] Navigation - New URL: https://www.amazon.com/
+[2024-11-18 14:10:28] Detected 2 hover(s)
+[2024-11-18 14:10:28] Hover detected at: 1270, 487
+[2024-11-18 14:10:28] Hover detected at: 1270, 487
+[2024-11-18 14:10:39] Detected 2 hover(s)
+[2024-11-18 14:10:39] Hover detected on link: "" (https://www.amazon.com/events/devicedeals/?_encoding=UTF8&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&bubble-id=deals-collection-smart-home&ref_=ods_gw_GW_US_EN_XPL_SA-CO-CH_BFDLU24_H1_Y_XPL_C-5342&pd_rd_w=fMZED&content-id=amzn1.sym.834a6219-dcb0-4f2d-a027-c188a0583153&pf_rd_p=834a6219-dcb0-4f2d-a027-c188a0583153&pf_rd_r=GC3SBX1SDVA1C0464HN7&pd_rd_wg=QQlQ1&pd_rd_r=9f7122d5-ab59-44e4-b086-dbd187870891)
+[2024-11-18 14:10:39] Hover detected on link: "" (https://www.amazon.com/events/devicedeals/?_encoding=UTF8&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&bubble-id=deals-collection-smart-home&ref_=ods_gw_GW_US_EN_XPL_SA-CO-CH_BFDLU24_H1_Y_XPL_C-5342&pd_rd_w=fMZED&content-id=amzn1.sym.834a6219-dcb0-4f2d-a027-c188a0583153&pf_rd_p=834a6219-dcb0-4f2d-a027-c188a0583153&pf_rd_r=GC3SBX1SDVA1C0464HN7&pd_rd_wg=QQlQ1&pd_rd_r=9f7122d5-ab59-44e4-b086-dbd187870891)
+[2024-11-18 14:10:40] Detected 2 hover(s)
+[2024-11-18 14:10:40] Hover detected on link: "" (https://www.amazon.com/events/devicedeals/?_encoding=UTF8&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&bubble-id=deals-collection-smart-home&ref_=ods_gw_GW_US_EN_XPL_SA-CO-CH_BFDLU24_H1_Y_XPL_C-5342&pd_rd_w=fMZED&content-id=amzn1.sym.834a6219-dcb0-4f2d-a027-c188a0583153&pf_rd_p=834a6219-dcb0-4f2d-a027-c188a0583153&pf_rd_r=GC3SBX1SDVA1C0464HN7&pd_rd_wg=QQlQ1&pd_rd_r=9f7122d5-ab59-44e4-b086-dbd187870891)
+[2024-11-18 14:10:40] Hover detected on link: "" (https://www.amazon.com/events/devicedeals/?_encoding=UTF8&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&bubble-id=deals-collection-smart-home&ref_=ods_gw_GW_US_EN_XPL_SA-CO-CH_BFDLU24_H1_Y_XPL_C-5342&pd_rd_w=fMZED&content-id=amzn1.sym.834a6219-dcb0-4f2d-a027-c188a0583153&pf_rd_p=834a6219-dcb0-4f2d-a027-c188a0583153&pf_rd_r=GC3SBX1SDVA1C0464HN7&pd_rd_wg=QQlQ1&pd_rd_r=9f7122d5-ab59-44e4-b086-dbd187870891)
+[2024-11-18 14:10:55] Detected 2 hover(s)
+[2024-11-18 14:10:55] Hover detected at: 527, 17
+[2024-11-18 14:10:55] Hover detected at: 527, 17
+[2024-11-18 14:10:59] Detected 2 hover(s)
+[2024-11-18 14:10:59] Hover detected on link: "._cropped-image-link_style_dt-TextContainer__3nbU9 {--text-pos-y: 30px; --text-pos-x: 320px; --text-width: 50%; --title-text-width: 50%; --subtitle-text-width: 50%; --title-font-color: #FFFFFF; --title-font-size: 44px; --title-font-weight: 700; --subtitle-font-color: #FFFFFF; --subtitle-font-size: 36px; --subtitle-font-weight: 700; --subtitle-margin-top: 4px; --cta-font-size: 14px; --cta-margin-top: 20px; --legal-line-font-color: #FFFFFF; --legal-line-font-size: 14px; --legal-line-margin-top: 14px; }" (https://www.amazon.com/blackfriday/?_encoding=UTF8&pd_rd_w=cahh3&content-id=amzn1.sym.726ee57c-7d43-4395-9bac-83cb21c27662&pf_rd_p=726ee57c-7d43-4395-9bac-83cb21c27662&pf_rd_r=GC3SBX1SDVA1C0464HN7&pd_rd_wg=QQlQ1&pd_rd_r=9f7122d5-ab59-44e4-b086-dbd187870891&ref_=pd_hp_d_hero_unk)
+[2024-11-18 14:10:59] Hover detected on link: "._cropped-image-link_style_dt-TextContainer__3nbU9 {--text-pos-y: 30px; --text-pos-x: 320px; --text-width: 50%; --title-text-width: 50%; --subtitle-text-width: 50%; --title-font-color: #FFFFFF; --title-font-size: 44px; --title-font-weight: 700; --subtitle-font-color: #FFFFFF; --subtitle-font-size: 36px; --subtitle-font-weight: 700; --subtitle-margin-top: 4px; --cta-font-size: 14px; --cta-margin-top: 20px; --legal-line-font-color: #FFFFFF; --legal-line-font-size: 14px; --legal-line-margin-top: 14px; }" (https://www.amazon.com/blackfriday/?_encoding=UTF8&pd_rd_w=cahh3&content-id=amzn1.sym.726ee57c-7d43-4395-9bac-83cb21c27662&pf_rd_p=726ee57c-7d43-4395-9bac-83cb21c27662&pf_rd_r=GC3SBX1SDVA1C0464HN7&pd_rd_wg=QQlQ1&pd_rd_r=9f7122d5-ab59-44e4-b086-dbd187870891&ref_=pd_hp_d_hero_unk)
+[2024-11-18 14:11:02] Detected 2 hover(s)
+[2024-11-18 14:11:02] Hover detected at: 986, 3
+[2024-11-18 14:11:02] Hover detected at: 986, 3
+[2024-11-18 14:11:02] Navigation - New URL: https://www.amazon.com/
+[2024-11-18 14:11:05] Detected 2 scroll(s)
+[2024-11-18 14:11:05] Detected 2 hover(s)
+[2024-11-18 14:11:05] Page scrolled to: 0, 275
+[2024-11-18 14:11:05] Page scrolled to: 0, 275
+[2024-11-18 14:11:05] Hover detected on link: "Add to watchlistAdd to watchlist" (https://www.amazon.com/gp/video/detail/B0D4THSKJ7/ref=dvm_crs_gat_us_s_dt_ac_pl_al_11TNF24_tp/?ie=UTF8&pd_rd_w=oqlNK&content-id=amzn1.sym.30dd8b8a-9dc1-4fab-adb3-6d49bef335b6&pf_rd_p=30dd8b8a-9dc1-4fab-adb3-6d49bef335b6&pf_rd_r=DEW9R6A2VF9HCGMGCAY6&pd_rd_wg=PO5me&pd_rd_r=f89cc525-eca3-4bbd-b415-aa2610d6eeec&ref_=pd_hp_d_atf_unk)
+[2024-11-18 14:11:05] Hover detected on link: "Add to watchlistAdd to watchlist" (https://www.amazon.com/gp/video/detail/B0D4THSKJ7/ref=dvm_crs_gat_us_s_dt_ac_pl_al_11TNF24_tp/?ie=UTF8&pd_rd_w=oqlNK&content-id=amzn1.sym.30dd8b8a-9dc1-4fab-adb3-6d49bef335b6&pf_rd_p=30dd8b8a-9dc1-4fab-adb3-6d49bef335b6&pf_rd_r=DEW9R6A2VF9HCGMGCAY6&pd_rd_wg=PO5me&pd_rd_r=f89cc525-eca3-4bbd-b415-aa2610d6eeec&ref_=pd_hp_d_atf_unk)
+[2024-11-18 14:11:07] Detected 2 scroll(s)
+[2024-11-18 14:11:07] Page scrolled to: 0, 0
+[2024-11-18 14:11:07] Page scrolled to: 0, 0
+[2024-11-18 14:11:07] Detected 2 hover(s)
+[2024-11-18 14:11:07] Hover detected on link: "Add to watchlistAdd to watchlist" (https://www.amazon.com/gp/video/detail/B0D4THSKJ7/ref=dvm_crs_gat_us_s_dt_ac_pl_al_11TNF24_tp/?ie=UTF8&pd_rd_w=oqlNK&content-id=amzn1.sym.30dd8b8a-9dc1-4fab-adb3-6d49bef335b6&pf_rd_p=30dd8b8a-9dc1-4fab-adb3-6d49bef335b6&pf_rd_r=DEW9R6A2VF9HCGMGCAY6&pd_rd_wg=PO5me&pd_rd_r=f89cc525-eca3-4bbd-b415-aa2610d6eeec&ref_=pd_hp_d_atf_unk)
+[2024-11-18 14:11:07] Hover detected on link: "Add to watchlistAdd to watchlist" (https://www.amazon.com/gp/video/detail/B0D4THSKJ7/ref=dvm_crs_gat_us_s_dt_ac_pl_al_11TNF24_tp/?ie=UTF8&pd_rd_w=oqlNK&content-id=amzn1.sym.30dd8b8a-9dc1-4fab-adb3-6d49bef335b6&pf_rd_p=30dd8b8a-9dc1-4fab-adb3-6d49bef335b6&pf_rd_r=DEW9R6A2VF9HCGMGCAY6&pd_rd_wg=PO5me&pd_rd_r=f89cc525-eca3-4bbd-b415-aa2610d6eeec&ref_=pd_hp_d_atf_unk)
