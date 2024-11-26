@@ -12,3 +12,9 @@ pip install -r requirements.txt
 ```
 python browser_recorder.py https://www.amazon.com ./logs
 ```
+
+# Running for webarena
+
+```
+python browser_recorder.py http://localhost:7770/ ./logs
+```
