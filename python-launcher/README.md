@@ -5,6 +5,7 @@ source activate base
 conda create -n python-launcher python=3.10
 conda activate python-launcher
 pip install -r requirements.txt
+playwright install
 ```
 
 # Running the code
